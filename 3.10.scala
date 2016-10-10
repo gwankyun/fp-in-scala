@@ -4,7 +4,7 @@ package object practice_3_10 {
     @annotation.tailrec
     def go(as: List[A], b: B): B = {
       as match {
-        case Nil    => b
+        case Nil        => b
         case Cons(h, t) => go(t, f(b, h))
       }
     }
